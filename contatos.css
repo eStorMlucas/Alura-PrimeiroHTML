@@ -1,0 +1,166 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+header {
+    background: #bbb;
+}
+
+.cabecalho {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 120px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+main {
+    width: 940px;
+    margin: 20px auto;
+    font-size: 20px;
+}
+
+.input {
+    display: block;
+    margin: 10px 10px;
+    width: 40%;
+}
+
+.radio {
+    margin-right: 10px;
+}
+
+.horarios {
+    margin: 10px 0;
+}
+
+.checkbox {
+    margin: 10px 0;
+}
+
+#button {
+    display: block;
+    margin: 10px 0px 10px 140px;
+    padding: 15px 30px;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor: pointer;
+}
+
+#button:hover {
+    background: darkorange;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 20px 20px;
+}
+
+thead {
+    background: #bbb;
+    color: white;
+    font-weight: bold;
+}
+
+td, th {
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background: url(bg.jpg);
+    padding-top: 20px;
+}
+
+.copyright {
+    font-size: 13px;
+    color: white;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .cabecalho {
+        width: 90%;
+    }
+
+    main {
+        width: auto;
+        margin-left: 10rem;
+    }
+
+    .input {
+        width: 70%;
+        padding: 5px;
+    }
+
+    #button {
+        margin: 10px 0 10px 130px
+    }
+
+    table {
+        margin: 20px 0 0 100px
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho, main, form {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        padding: 0 0 20px 0;
+        text-align: center;
+    }
+
+    .mobile-spacing {
+        width: 80%;
+        margin: 0px auto;   
+    }
+
+    .input, textarea, table, legend {
+        margin: 10px auto;
+    }
+
+    form .input:not(fieldset .input) {
+        width: 90%;
+    }
+
+    #button {
+        margin: 10px auto 20px;
+    }
+}

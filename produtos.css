@@ -1,0 +1,150 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+}
+
+header {
+    background: #bbb;
+}
+
+.cabecalho {
+    position: relative;
+    width: 940px;
+    margin: 0 auto;
+}
+
+nav {
+    position: absolute;
+    top: 120px;
+    right: 0;
+}
+
+nav li {
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a {
+    text-transform: uppercase;
+    color: #000;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #C78C19;
+    text-decoration: underline;
+}
+
+.main {
+    width: 940px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+}
+
+.main li {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid #000;
+    border-radius: 10px;
+}
+
+.main li:hover {
+    border-color: #C78C19;
+}
+
+.main li:hover h2 {
+    font-size: 32px;
+}
+
+.main li:active {
+    border-color: #088c19;
+}
+
+.main h2 {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.descricao {
+    font-size: 18px;
+}
+
+.preco {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+footer {
+    margin-top: 20px;
+    text-align: center;
+    background: url(bg.jpg);
+    padding-top: 20px;
+}
+
+.copyright {
+    font-size: 13px;
+    color: white;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) and (min-width: 481px) {
+    .cabecalho {
+        width: 90%;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .main li {
+        width: 25%;
+        height: 22rem;
+    }
+
+    .main li img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    .cabecalho, .main {
+        width: auto;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+        padding: 0 0 20px 0;
+        text-align: center;
+    }
+
+    .main {
+        text-align: center;
+    }
+
+    .main li {
+        display: block;
+        width: 60%;
+        margin: 10px auto
+    }
+
+    .main img {
+        width: 100%;
+    }
+
+    .main li:last-child {
+        margin: 0 auto 40px auto;
+    }
+}
