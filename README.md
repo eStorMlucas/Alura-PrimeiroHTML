@@ -1,7 +1,7 @@
 # PrimeiroHTML
 
 # Site Preview
-![Site preview screenshot](screenshoot.png)
+![Site preview screenshot](screenshot.png)
 
 > Theres a "Course Saga" from **Alura** with **Pedro Marins** as a intructor:
 > This is a 4 courses prepared for beginners in HTML/CSS 
